@@ -32,6 +32,18 @@ body {
     color: white;
   }
 
+  .btn-teal {
+    background-color: #0f766e;
+    color: white;
+  }
+  .btn-teal:hover {
+    background-color: #115e59;
+  }
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
+
   .hero {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -228,6 +240,45 @@ body {
     color: #666;
     line-height: 1.6;
 }
+
+/* Katalog Section */
+.product-card {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.product-card:active {
+  transform: scale(0.97);
+}
+
+.btn-outline-teal {
+  color: #00bfa6;
+  border: 2px solid #00bfa6;
+  background-color: #fff;
+}
+
+.btn-outline-teal:hover {
+  background-color: #00bfa6;
+  color: #fff;
+}
+
+.bg-teal {
+  background-color: #2d9c9c;
+  color: white;
+}
+
+.bg-tosca {
+  background-color: #2D9C9C !important;
+}
+.border-tosca {
+  border-bottom: 2px solid #2D9C9C !important;
+}
+
+
+
 
 /* Improved spacing between card rows */
 .services-row {
