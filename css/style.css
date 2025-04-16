@@ -92,6 +92,7 @@ body {
   .promo-section {
     padding: 2rem 1rem;
     
+    
   }
 
   .promo-section h2 {
@@ -219,7 +220,7 @@ body {
 }
 
 .service-icon img {
-    height: 60px;
+    height: 100px;
     width: auto;
     transition: all 0.3s ease;
 }
@@ -277,6 +278,30 @@ body {
   border-bottom: 2px solid #2D9C9C !important;
 }
 
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #319D9F;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.icon-circle:hover {
+  background-color: #267876;
+  color: #fff;
+}
 
 
 
