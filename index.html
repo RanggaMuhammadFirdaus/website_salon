@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toska Beauty</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Toska Beauty</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Promo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Testimoni</a></li>
+          <li class="nav-item">
+            <a class="btn btn-primary ms-3" href="#">Reservasi</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-md-6 mb-5 mb-md-0">
+          <h1 class="display-5 fw-bold">
+            Temukan <span class="highlight">Kecantikan</span><br /> Alami Anda
+          </h1>
+          <p class="mt-4 text-secondary">
+            Salon kecantikan profesional dengan layanan premium untuk perawatan wajah, rambut, dan tubuh yang akan membantu Anda memancarkan kecantikan dari dalam dan luar.
+          </p>
+          <div class="d-flex gap-3 mt-4 hero-buttons">
+            <a href="#" class="btn btn-primary px-4 py-2">Buat Janji Sekarang</a>
+            <a href="#" class="btn btn-outline-primary px-4 py-2">Lihat Layanan</a>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="col-md-6 position-relative">
+          <img src="img/salon.jpg" class="img-fluid rounded-4 shadow" alt="Spa" />
+          <div class="tag-box mt-3">
+            <strong>Facial Treatment</strong>
+            <span class="popular-badge">Populer</span>
+            <p class="text-secondary mt-2 mb-0" style="font-size: 0.9rem;">
+              Perawatan wajah premium menggunakan bahan alami untuk kulit cerah dan kenyal
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Section -->
+<section class="promo-section py-5">
+    <h2 class="text-center">Promo Spesial</h2>
+    <p class="promo-subtext text-center">Nikmati penawaran spesial untuk berbagai layanan kecantikan kami</p>
+  
+    <div class="promo-box d-flex flex-column flex-md-row justify-content-between align-items-center mt-4">
+      <!-- Left Side: Text -->
+      <div class="promo-text text-center text-md-start mb-4 mb-md-0">
+        <h4 class="mb-2">Promo Berakhir Dalam</h4>
+        <p class="mb-0 text-nowrap">Dapatkan diskon hingga 30% untuk berbagai layanan premium kami</p>
+      </div>
+  
+      <!-- Right Side: Countdown Timer -->
+      <div class="promo-timer d-flex justify-content-center flex-wrap">
+        <div class="timer-box text-center mx-2">
+          <span id="days">0</span>
+          <small>Hari</small>
+        </div>
+        <div class="timer-box text-center mx-2">
+          <span id="hours">0</span>
+          <small>Jam</small>
+        </div>
+        <div class="timer-box text-center mx-2">
+          <span id="minutes">0</span>
+          <small>Menit</small>
+        </div>
+        <div class="timer-box text-center mx-2">
+          <span id="seconds">0</span>
+          <small>Detik</small>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center">
+        <div class="modal-header border-0">
+          <h5 class="modal-title w-100" id="promoModalLabel">Promo Berakhir</h5>
+        </div>
+        <div class="modal-body">
+          Promo spesial telah berakhir. Nantikan penawaran menarik kami berikutnya!
+        </div>
+        <div class="modal-footer justify-content-center border-0">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="services-section">
+    <div class="container">
+        <h1 class="section-title">Layanan Kami</h1>
+        <p class="section-description">
+            Layanan perawatan kecantikan premium dengan teknologi terkini dan produk berkualitas untuk hasil terbaik
+        </p>
+        
+        <div class="divider"></div>
+        
+        <div class="row services-row">
+            <!-- Perawatan Wajah -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Perawatan Wajah">
+                    </div>
+                    <h2 class="service-title">Perawatan Wajah</h2>
+                    <p class="service-description">
+                        Berbagai perawatan wajah untuk kulit bersih dan cerah. Termasuk facial, masker, dan perawatan khusus.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Perawatan Rambut -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3067/3067519.png" alt="Perawatan Rambut">
+                    </div>
+                    <h2 class="service-title">Perawatan Rambut</h2>
+                    <p class="service-description">
+                        Potong, styling, warna, dan perawatan rambut untuk menjaga kesehatan dan keindahan rambut Anda.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Perawatan Kuku -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2966/2966788.png" alt="Perawatan Kuku">
+                    </div>
+                    <h2 class="service-title">Perawatan Kuku</h2>
+                    <p class="service-description">
+                        Manicure dan pedicure profesional dengan pilihan warna dan desain yang beragam.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Perawatan Tubuh -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2936/2936886.png" alt="Perawatan Tubuh">
+                    </div>
+                    <h2 class="service-title">Perawatan Tubuh</h2>
+                    <p class="service-description">
+                        Perawatan tubuh lengkap termasuk pijat, lulur, dan terapi untuk relaksasi dan kecantikan kulit tubuh.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Perawatan Kulit -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2754/2754123.png" alt="Perawatan Kulit">
+                    </div>
+                    <h2 class="service-title">Perawatan Kulit</h2>
+                    <p class="service-description">
+                        Perawatan kulit profesional dengan teknologi modern untuk mengatasi berbagai masalah kulit.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Aroma Terapi -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2439/2439716.png" alt="Aroma Terapi">
+                    </div>
+                    <h2 class="service-title">Aroma Terapi</h2>
+                    <p class="service-description">
+                        Terapi relaksasi dengan essential oil pilihan untuk menenangkan pikiran dan menyegarkan tubuh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/6281234567890" class="floating-whatsapp" target="_blank" aria-label="Chat WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+
+  <script>
+    // Set your target date here (format: YYYY-MM-DDTHH:MM:SS)
+    const targetDate = new Date("2025-04-20T23:59:59").getTime();
+  
+    const countdown = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+  
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+  
+      if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById("days").innerText = 0;
+        document.getElementById("hours").innerText = 0;
+        document.getElementById("minutes").innerText = 0;
+        document.getElementById("seconds").innerText = 0;
+        const modal = new bootstrap.Modal(document.getElementById('promoModal'));
+        modal.show();
+      }
+    }, 1000);
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
